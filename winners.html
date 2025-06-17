@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<head>
+
+<style>
+.grid-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+.filmcard {
+  flex: 0 0 180px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 1rem;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.filmcard h4 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #777;
+  text-align: left;
+}
+
+.filmcard img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  margin: 0.5rem 0;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+
+.filmcard .title {
+  font-family: 'Lora', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0.3rem;
+  color: #BF444C;
+}
+
+.filmcard .director {
+  font-size: 14px;
+  color: #000000;
+  margin-top: 0.2rem;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.section-title {
+  text-align: left;
+  font-family: 'Spoqa', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #BF444C;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.topup {
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #444;
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.topup:hover {
+  background-color: #eee;
+}
+
+</style>
+
+
+<body>
+
+<!-- 작품상 -->
+<div class="section-wrapper">
+<div class="section-title">작품상</div>
+<div class="grid-container">
+  <div class="filmcard">
+    <h4>OSCARS</h4>
+    <img src="images/anora.webp" alt="Anora">
+    <div class="title">Anora</div>
+    <div class="director">Sean Baker</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>CANNES</h4>
+    <img src="images/anora.webp" alt="Anora">
+    <div class="title">Anora</div>
+    <div class="director">Sean Baker</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>VENICE</h4>
+    <img src="images/room.webp" alt="The Room Next Door">
+    <div class="title">The Room Next Door</div>
+    <div class="director">Pedro Almodóvar</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>BERLIN</h4>
+    <img src="images/dahomey.webp" alt="Dahomey">
+    <div class="title">Dahomey</div>
+    <div class="director">Mati Diop</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>GOLDEN GLOBES</h4>
+    <img src="images/brutalist.webp" alt="The Brutalist">
+    <div class="title">The Brutalist</div>
+    <div class="director">Brady Corbet</div>
+  </div>
+</div>
+</div>
+<!-- 작품상 끝 -->
+
+
+<!-- 각본상 -->
+<div class="section-wrapper">
+<div class="section-title">각본상</div>
+<div class="grid-container">
+  <div class="filmcard">
+    <h4>OSCARS</h4>
+    <img src="images/anora.webp" alt="Anora">
+    <div class="title">Anora</div>
+    <div class="director">Sean Baker</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>CANNES</h4>
+    <img src="images/substance.webp" alt="Substance">
+    <div class="title">The Substance</div>
+    <div class="director">Coralie Fargeat</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>VENICE</h4>
+    <img src="images/imstillhere.webp" alt="I'm Still Here">
+    <div class="title">I'm Still Here</div>
+    <div class="director">Walter Salles</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>BERLIN</h4>
+    <img src="images/dying.webp" alt="Dying">
+    <div class="title">Dying</div>
+    <div class="director">Ainda Estou Aqui</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>GOLDEN GLOBES</h4>
+    <img src="images/conclave.webp" alt="Conclave">
+    <div class="title">Conclave</div>
+    <div class="director">Edward Berger</div>
+  </div>
+</div>
+</div>
+<!-- 각본상 끝 -->
+
+<!-- 감독상 -->
+<div class="section-wrapper">
+<div class="section-title">감독상</div>
+<div class="grid-container">
+  <div class="filmcard">
+    <h4>OSCARS</h4>
+    <img src="images/anora.webp" alt="Anora">
+    <div class="title">Sean Baker</div>
+    <div class="director">Anora</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>CANNES</h4>
+    <img src="images/grandtour.webp" alt="Grand Tour">
+    <div class="title">Miguel Gomes</div>
+    <div class="director">Grand Tour</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>VENICE</h4>
+    <img src="images/brutalist.webp" alt="brutalist">
+    <div class="title">Brady Corbet</div>
+    <div class="director">The Brutalist</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>BERLIN</h4>
+    <img src="images/pepe.webp" alt="pepe">
+    <div class="title">DyiNelson Carlo De Los Santos Ariasng</div>
+    <div class="director">Pepe</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>GOLDEN GLOBES</h4>
+    <img src="images/brutalist.webp" alt="brutalist">
+    <div class="title">Brady Corbet</div>
+    <div class="director">The Brutalist</div>
+  </div>
+</div>
+</div>
+<!-- 감독상 끝 -->
+
+<!-- 남우주 -->
+<div class="section-wrapper">
+<div class="section-title">남우주연상</div>
+<div class="grid-container">
+  <div class="filmcard">
+    <h4>OSCARS</h4>
+    <img src="images/brutalist.webp" alt="brutalist">
+    <div class="title">Adrien Brody</div>
+    <div class="director">The Brutalist</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>CANNES</h4>
+    <img src="images/kindof.webp" alt="kind">
+    <div class="title">Jesse Plemons</div>
+    <div class="director">Kinds of Kindness</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>VENICE</h4>
+    <img src="images/sun.webp" alt="sun">
+    <div class="title">Vincent Lindon</div>
+    <div class="director">Jouer avec le feu</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>BERLIN</h4>
+    <img src="images/different.webp" alt="different">
+    <div class="title">Sebastian Stan</div>
+    <div class="director">A Different Man</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>GOLDEN GLOBES</h4>
+    <img src="images/brutalist.webp" alt="brutalist">
+    <div class="title">Adrien Brody</div>
+    <div class="director">The Brutalist</div>
+  </div>
+</div>
+</div>
+<!-- 남우주 끝 -->
+
+<!-- 여우주 -->
+<div class="section-wrapper">
+<div class="section-title">여우주연상</div>
+<div class="grid-container">
+  <div class="filmcard">
+    <h4>OSCARS</h4>
+    <img src="images/anora.webp" alt="anora">
+    <div class="title">Mikey Madison</div>
+    <div class="director">Anora</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>CANNES</h4>
+    <img src="images/emlia.webp" alt="Emilia Pérez">
+    <div class="title">Zoe Saldana</div>
+    <div class="director">Emilia Pérez</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>VENICE</h4>
+    <img src="images/babygirl.webp" alt="Babygirl">
+    <div class="title">Nicole Kidman</div>
+    <div class="director">Babygirl</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>BERLIN</h4>
+    <img src="images/smallthings.webp" alt="smallthings">
+    <div class="title">Emily Watson</div>
+    <div class="director">Small Things Like These</div>
+  </div>
+
+  <div class="filmcard">
+    <h4>GOLDEN GLOBES</h4>
+    <img src="images/imstillhere.webp" alt="imstillhere">
+    <div class="title">Fernanda Torres</div>
+    <div class="director">I'm Still Here</div>
+  </div>
+</div>
+</div>
+<!-- 여우주 끝 -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

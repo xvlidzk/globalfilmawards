@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Phase';
+  src: url('./font/Phase.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Spoqa';
+  src: url('./font/Spoqa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 타이틀 */
+.text-container {
+  position: relative;
+  width: fit-content;
+  margin: 30px auto;
+  margin-bottom: 0.5rem;
+  font-family: 'Phase', sans-serif;
+
+}
+
+.main-text {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
+  color: #111;
+}
+
+
+.navbar {
+  background-color: #ffffff !important;
+}
+
+.btn-custom {
+  background-color: #BF444C;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #a9373b;
+  color: white;
+}
+
+
+/* Remove card background and rounded corners for nav area */
+.card-header {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+
+/* 내비게이션 링크 스타일 및 정렬 */
+.nav-tabs {
+  border-bottom: 1px solid #d1d1d1;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: white;
+  padding: 0.5rem 0;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #222;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+
+.nav-tabs .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #BF444C;
+  transition: width 0.3s ease;
+  margin-top: 0.2rem;
+}
+
+.nav-tabs .nav-link:hover::after,
+.nav-tabs .nav-link.active::after {
+  width: 100%;
+}
+

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+
+
+  <style>
+.card-feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card-feature .image-container {
+  flex: 0 0 40%;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.card-feature .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.25rem;
+  transition: transform 0.4s ease;
+}
+
+.card-feature:hover .image-container img {
+  transform: scale(1.05);
+}
+
+.card-feature .text-container1 {
+  flex: 0 0 55%;
+  padding-left: 2rem;
+  position: relative;
+  background: white;
+  z-index: 3;
+}
+
+.card-feature::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 35%;
+  width: 5px;
+  background-color: goldenrod;
+  z-index: 1;
+}
+
+.card-feature h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-feature p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.card-feature .read-more {
+  margin-top: 1.5rem;
+  display: inline-block;
+  border: 1px solid #444;
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.card-feature .read-more:hover {
+  background-color: #eee;
+}
+
+h2 {
+    font-family: 'Phase', sans-serif;
+    color: #BF444C;
+
+}
+
+.text-muted {
+    text-align: right;
+}
+
+.text-container1 {
+    font-family: 'Spoqa', sans-serif;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="card-feature">
+  <div class="image-container">
+    <img src="images/okja.avif" alt="okja">
+  </div>
+  <div class="text-container1">
+    <h2>영화 '옥자' 화면비 사건</h2>
+    <p class="text-muted">2017 Cannes</p>
+    <p>봉준호 감독의 <옥자>가 칸 영화제 경쟁 부문에 초청되었지만, 
+    상영 중 화면비가 잘못 설정되어 10여 분간 상영이 중단되는 초유의 사태가 벌어졌다. 
+    이는 넷플릭스 영화의 영화제 초청 여부에 대한 논쟁으로 이어졌다.</p>
+    <a href="#" class="read-more">READ MORE</a>
+  </div>
+</div>
+
+<div class="card-feature">
+  <div class="image-container">
+    <img src="images/moonlight.jpg" alt="moonlight">
+  </div>
+  <div class="text-container1">
+    <h2>작품상 발표 실수 사건</h2>
+    <p class="text-muted">2017 Oscars</p>
+    <p>아카데미 작품상 시상에서 <문라이트>가 수상자로 선정되었음에도 불구하고, 
+    수상자 발표 실수로 <라라랜드>가 잘못 불려 올라가는 해프닝이 발생했다. 
+    수상자는 무대 위에서 트로피를 반납해야 했고, 시상 진행의 신뢰성에 큰 타격을 주었다.</p>
+    <a href="#" class="read-more">READ MORE</a>
+  </div>
+</div>
+
+<div class="card-feature">
+  <div class="image-container">
+    <img src="images/wood.jpeg" alt="woodie">
+  </div>
+  <div class="text-container1">
+    <h2>미투 감독 보이콧 사건</h2>
+    <p class="text-muted">2018 Venice</p>
+    <p>뤽 베송, 로만 폴란스키, 우디 앨런 등 성폭력 혐의가 있는 감독들의 작품이 공식 초청되자, 
+    여성 영화인과 비평가들이 이에 대해 공개적인 비판과 보이콧을 진행하였다. 
+    영화제의 윤리적 기준과 작가주의 사이의 경계 논쟁이 불붙었다.</p>
+    <a href="#" class="read-more">READ MORE</a>
+  </div>
+</div>
+
+<div class="card-feature">
+  <div class="image-container">
+    <img src="images/bauer.avif" alt="bauer">
+  </div>
+  <div class="text-container1">
+    <h2>영화제 창립자 나치 연루 논란</h2>
+    <p class="text-muted">2020 Berlin</p>
+    <p>베를린 영화제 설립자 알프레드 바우어가 나치 선전과 연관된 이력이 있음이 드러나자, 
+    그를 기리는 이름의 상(은곰 특별공로상)이 폐지되고 관련 기록이 재검토되었다. 
+    영화제 역사에 대한 비판적 재조명이 이루어졌다.</p>
+    <a href="#" class="read-more">READ MORE</a>
+  </div>
+</div>
+
+<div class="card-feature">
+  <div class="image-container">
+    <img src="images/willsmith.jpg" alt="willsmith">
+  </div>
+  <div class="text-container1">
+    <h2>윌 스미스의 크리스 록 폭행 사건</h2>
+    <p class="text-muted">2022 Oscars</p>
+    <p>코미디언 크리스 록이 무대에서 윌 스미스의 아내를 농담의 소재로 삼자, 
+    윌 스미스가 무대에 올라가 크리스 록의 뺨을 때리는 장면이 생중계되어 전 세계에 충격을 주었다. 
+    이후 그는 아카데미로부터 10년간 행사 참석 금지 조치를 받았다.</p>
+    <a href="#" class="read-more">READ MORE</a>
+  </div>
+</div>
+
+<div class="card-feature">
+  <div class="image-container">
+    <img src="images/poweroutrage.webp" alt="poweroutage">
+  </div>
+  <div class="text-container1">
+    <h2>칸 영화제 폐막식 정전 사태</h2>
+    <p class="text-muted">2024 Cannes</p>
+    <p>칸 영화제 폐막식에서 전력 계통 이상으로 수 분간 정전이 발생, 
+    화면과 레드카펫 조명이 꺼지는 사건이 발생했다. 
+    영화제 측은 현장 상황을 빠르게 수습했지만, 대형 국제 영화제로서의 운영 시스템에 대한 지적이 나왔다.</p>
+    <a href="#" class="read-more">READ MORE</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+
+</body>
+</html>
